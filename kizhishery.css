@@ -24,6 +24,8 @@
   .topnav {
     overflow: hidden;
     background-color: rgb(51, 51, 51);
+    font-family: mas;
+    
   }
   
   .topnav a {
