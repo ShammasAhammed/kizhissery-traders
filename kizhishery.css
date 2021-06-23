@@ -1,28 +1,29 @@
-
-    
-.card{
-    width: 10rem;
-    border-radius: 30px 29px 30px 30px;
-}.plastic-img{
-    border-radius: 30px 30px 0px 0px;
-
+body{
+  background-color:rgb(255, 255, 255);
 }
+    
+
 @font-face{
     src: url(/images/Righteous/Righteous-Regular.ttf);
     font-family:mas;
 }.hedClr{
+    width: 100%;
     background-color: black;
+    position:fixed;
+    z-index: 2;
+  
 }
 
 .hedLogo{
-    height: 75px;
-    width: 96px;
-    padding-top: 10px;
+  height: 76px;
+  width: 75px;
+  margin-top: 3px;
+  border-radius: 21px
 }
   
   .topnav {
     overflow: hidden;
-    background-color: rgb(0, 0, 0);
+    background-color: #365ea8;
     font-family: mas;
 
   }
@@ -40,13 +41,14 @@
   .topnav a:hover {
     background-color: rgb(50, 204, 58);
     color: rgb(68, 52, 52);
+    border-radius: 15px;
     
     transition-duration:1s;
   }
   
   .topnav a.active {
-    background-color: #434e4452;
-    color: white;
+    background-color: #e9dede52;
+    color: rgb(10, 10, 10);
   }
   
   .topnav .icon {
@@ -76,14 +78,22 @@
       
       
     }
-  }.about-section{
-
-     margin-top: 2rem;
-     
-     border-radius:15px;
-
   }
-  .bgChange{
+  .about-section{
+    width: 100%;
+     display: grid;
+     align-items:start;
+     grid-template-columns: repeat(2,1fr);
+     padding-top: 7em;
+   }
+   @media(max-width:600px){
+     .about-section{
+     grid-template-columns: repeat(1,1fr);
+     }
+   }
+     
+   
+    .bgChange{
     background:url(/images/bluck.jpg);
     animation: chbg  20s infinite normal;
     background-size:cover
@@ -113,14 +123,14 @@
       background:url(/images/wholesale\ 5.jpg);
     background-size:cover
     }
-  }
+  }*/
   .mine-logo{
-    /*height: 10rem;*/
-    /*width: 10rem;*/
-    margin-top: 10vw;
-    margin-left: 22vw;
+    
+    width: 100%;
+
+    
     border-radius: 15px;
-    filter: drop-shadow(12px 10px 11px rgba(38, 7, 41, 0.81))
+   /* filter: drop-shadow(12px 10px 11px rgba(38, 7, 41, 0.81))*/
     
 
   
@@ -130,8 +140,8 @@
     margin: auto;
     font-family:mas;
     text-align: center;
-    padding-top: 150px;
-    color: rgb(255, 255, 255);
+    padding-top: 50px;
+    color: rgb(58, 223, 85);
     
     
 
@@ -140,9 +150,111 @@
    .font-para{
      
      font-family:mas;
-     text-align: center;
-     color: rgb(255, 255, 255);
+     
+     color: rgb(75, 187, 60);
+   }
+   .pro-head{
+    margin: auto;
+    font-family:mas;
+    text-align: center;
+    padding-top: 2rem;
+    color: #2394ce;
+
+   }.packing{
+    margin: auto;
+    font-family:mas;
     
+    padding-top: 1rem;
+    color: rgb(54, 168, 79);
+   }.products{
+     width: 100%;
+     
+     
+     display: grid;
+     align-items:start;
+     gap: 3px;
+     grid-template-columns: repeat(6,1fr);
+     
+     
+   }.featured{
+     grid-column: span 2;
+   }
+   .card{
+
+     margin-bottom: 2px;
+     border-radius: 11px 11px 11px 11px;
+     background-color:#2394ce;
+     
+
+   }.card-body{
+    font-family:mas;
+    text-align: center;
+    color: rgb(15, 15, 15);
+    text-align: left;
+     
+   }.product-img{
+    border-radius: 11px 11px 0px 0px;
+    height: 13em;
+    
+    
+
+  }
+  p{
+    color: rgb(250, 248, 248);
+    line-height: 14px;
+  }@media(max-width:1000px){
+    .products{
+      grid-template-columns: repeat(5,1fr);
+    }.card-body{
+      height: 5em;
+    }
+  }@media(max-width:800px){
+    .products{
+      grid-template-columns: repeat(4,1fr);
+    }.product-img{
+      height: 12em;
+     } 
+    .card-body{
+      height: 5em;
+      text-align: left;
+    }
+   }@media(max-width:500px){ 
+    .products{
+      grid-template-columns: repeat(2,1fr);
+    }.product-img{
+      height: 8em;
+    }.card-body{
+      height: 3em;
+    }
+    
+  }@media(max-width:200px){
+    .products{
+      grid-template-columns: repeat(2,1fr);
+    }
+    .product-img{
+      height: 6em;
+    }
+  }.condact-div {
+    margin-top: 100px;
+    background-color: #2394ce;
+    width: 100%;
+    padding-top: 4em;
+    height: 454px;
+}.footer{
+  
+    background-color: #686869;
+    width: 100%;
+    padding-top: 4em;
+    height: 200px;
+}.contact{ 
+  margin-top:10px;
+  font-family:mas;
+  text-align: center;
+
+  color: rgb(247, 247, 247);
+  
+
+}
 
     
     
@@ -152,6 +264,5 @@
 
   
      
-   }
    
    
