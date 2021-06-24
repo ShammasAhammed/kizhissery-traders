@@ -93,37 +93,7 @@ body{
    }
      
    
-    .bgChange{
-    background:url(/images/bluck.jpg);
-    animation: chbg  20s infinite normal;
-    background-size:cover
-  }
-  @keyframes chbg {
-    0% {
-      background:url(/images/wholesale\ 3.jpg);
-    background-size:cover
-    }
-    20%{
-      background:url(/images/wholesale\ 3.jpg);
-    background-size:cover
-    }
-    40% {
-      background:url(/images/wholesale\ 4.jpg);
-    background-size:cover
-    }
-    60% {
-      background:url(/images/wholesale\ 4.jpg);
-    background-size:cover
-    }
-    80% {
-      background:url(/images/wholesale\ 5.jpg);
-    background-size:cover
-    }
-    100% {
-      background:url(/images/wholesale\ 5.jpg);
-    background-size:cover
-    }
-  }*/
+    
   .mine-logo{
     
     width: 100%;
